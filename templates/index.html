@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Dubbing Software</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dubbing Software</h1>
+    <form action="/dub" method="post">
+        <div class="file-upload">
+            <label for="videoFile" class="form-label">Choose MP4 File:</label>
+            <input type="file" id="videoFile" name="videoFile" accept=".mp4" required>
+        </div>
+        <div class="language-select">
+            <label for="language" class="form-label">Select Language:</label>
+            <select id="language" name="language" required>
+                <option value="te">Telugu</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="ba">Bengali</option>
+                <option value="gu">Gujarathi</option>
+                <option value="mr">Marathi</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+        <button type="submit" class="btn-primary">Process Video</button>
+    </form>
+</div>
+
+</body>
+</html>
